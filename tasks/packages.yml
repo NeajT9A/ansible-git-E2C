@@ -1,18 +1,12 @@
 - name: Install packages
   apt: 
-    name: "{{item}}" 
+    name: ['htop','vim']
     state: present
-  with_items:
-    - htop
-    - vim
 
 - name: Remove bloat
   apt: 
-    name: "{{item}}"
+    name: ['mc','tmux']
     state: absent
-  with_items:
-    -mc
-    -tmux
 
 - name: install snaps
   snap: 
