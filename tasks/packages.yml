@@ -1,14 +1,18 @@
 - name: Install packages
-  apt: name={{item}} state=present
-    with_items:
-      - htop
-      - vim
+  apt: 
+    name: {{item}} 
+    state: present
+  with_items:
+    - htop
+    - vim
 
 - name: Remove bloat
-  apt: name={{item}} state=absent
-    with_items:
-      -mc
-      -tmux
+  apt: 
+    name: {{item}} 
+    state: absent
+  with_items:
+    -mc
+    -tmux
 
 - name: install snaps
   community.general.snap: 
