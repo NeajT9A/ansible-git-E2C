@@ -2,5 +2,16 @@
   apt: name={{item}}
   with_items:
     - htop
-    - mc
-    - tmux
+  state: present
+
+- name: Remove bloat
+  apt: name={{item}}
+  with_items:
+    -mc
+    -tmux
+  state: absent
+
+- name: install snaps
+  community.general.snap: 
+    name: zoom-client
+    state: present 
