@@ -5,8 +5,12 @@
     - name: update repositories
       apt: update_cache=yes
       changed_when: False
+    - apt_repository:
+      repo : deb http://archive.canonical.com/ubuntu/ groovy partner
+      state : present 
 
   tasks:
     - include: tasks/users.yml
     - include: tasks/cron.yml
     - include: tasks/packages.yml
+
