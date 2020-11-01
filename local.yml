@@ -3,7 +3,8 @@
   become: true
   pre_tasks:
     - name: update repositories
-      apt: update_cache=yes
+      apt: 
+        update_cache: yes
       changed_when: False
     - apt_repository:
         repo : deb http://archive.canonical.com/ubuntu/ groovy partner
