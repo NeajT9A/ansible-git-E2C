@@ -1,9 +1,9 @@
 - name: Install packages
   apt: 
     name: 
-      -htop
-      -vimp
-      -adobe-flashplugin
+      - htop
+      - vim
+      - adobe-flashplugin
     state: present
 
 - name: Remove bloat
