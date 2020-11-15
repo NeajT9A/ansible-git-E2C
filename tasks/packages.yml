@@ -1,14 +1,18 @@
 - name: Install packages
   apt: 
     name: 
-      - htop
-      - vim
       - adobe-flashplugin
+      - libreoffice
+      - krita
+      - libreoffice-l10n-fr
+      - krita-l10n 
     state: present
 
-- name: Remove bloat
+- name: Remove unneeded packages
   apt: 
-    name: ['mc','tmux']
+    name: 
+      - tmux
+      - mc 
     state: absent
 
 - name: install snaps

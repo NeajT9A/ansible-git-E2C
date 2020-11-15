@@ -1,0 +1,5 @@
+- name: remove unattended upgrades
+  systemd: 
+    name: unattended-upgrades 
+    state: stopped
+    enabled: no
