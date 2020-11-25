@@ -3,9 +3,9 @@
     name: 
       - adobe-flashplugin
       - libreoffice
-      - krita
       - libreoffice-l10n-fr
-      - krita-l10n 
+      - remmina
+      - remmina-plugin-rdp
     state: present
 
 - name: Remove unneeded packages
