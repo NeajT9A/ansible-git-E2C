@@ -1,18 +1,16 @@
 - name: Install packages
   apt: 
     name: 
-      - adobe-flashplugin
       - libreoffice
       - libreoffice-l10n-fr
       - remmina
       - remmina-plugin-rdp
     state: present
 
-- name: Remove unneeded packages
+- name: Remove packages 
   apt: 
     name: 
-      - tmux
-      - mc 
+      - unattended-upgrades
     state: absent
 
 - name: install snaps

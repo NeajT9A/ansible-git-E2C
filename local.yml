@@ -6,10 +6,6 @@
       apt: 
         update_cache: yes
       changed_when: False
-    - name : add partner repos
-      apt_repository:
-        repo : deb http://archive.canonical.com/ubuntu/ groovy partner
-        state : present 
 
   tasks:
     - include: tasks/users.yml
