@@ -24,3 +24,4 @@
       - libreoffice-help-fr
       - gnome-user-docs-fr
       - hyphen-fr 
+    state: present
