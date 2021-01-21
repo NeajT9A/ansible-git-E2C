@@ -6,3 +6,21 @@
 
 - name: Default Locale 
   command: localectl set-locale LANG=fr_FR.UTF-8 LANGUAGE=fr_FR LC_CTYPE="fr_FR.UTF-8" LC_NUMERIC="fr_FR.UTF-8" LC_TIME="fr_FR.UTF-8" LC_COLLATE="fr_FR.UTF-8" LC_MONETARY="fr_FR.UTF-8" LC_MESSAGES="fr_FR.UTF-8" LC_PAPER="fr_FR.UTF-8" LC_NAME="fr_FR.UTF-8" LC_ADDRESS="fr_FR.UTF-8" LC_TELEPHONE="fr_FR.UTF-8" LC_MEASUREMENT="fr_FR.UTF-8" LC_IDENTIFICATION="fr_FR.UTF-8"
+
+
+- name: Locale Packages
+  apt: 
+    name: 
+      - language-pack-fr
+      - language-pack-fr-base
+      - manpages-fr
+      - langauge-pack-gnome-fr
+      - firefox-locale-fr
+      - wfrench
+      - gnome-getting-started-docs-fr
+      - hunspell-fr
+      - mythes-fr
+      - thunderbird-locale-fr
+      - libreoffice-help-fr
+      - gnome-user-docs-fr
+      - hyphen-fr 
