@@ -1,7 +1,6 @@
 - name: Install packages
   apt: 
     name: 
-      - libreoffice
       - libreoffice-l10n-fr
       - remmina
       - remmina-plugin-rdp
