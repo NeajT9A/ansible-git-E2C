@@ -1,0 +1,6 @@
+-name: Locale Gen 
+	locale_gen:
+		name: fr_FR.UTF-8
+		state: present
+-name: Default Locale 
+	command: localectl set-locale LANG=fr_FR.UTF-8 LC_ALL=fr_FR.UTF-8
