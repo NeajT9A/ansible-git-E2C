@@ -1,6 +1,8 @@
 - name: Locale Gen 
-  community.general.locale_gen:
-    name: fr_FR.UTF-8
-    state: present
+  lineinfile:
+          path: /etc/locale.gen
+          line: 'fr_FR.UTF-8 UTF-8'
+          state: present
+
 - name: Default Locale 
   command: localectl set-locale LANG=fr_FR.UTF-8 LC_ALL=fr_FR.UTF-8
